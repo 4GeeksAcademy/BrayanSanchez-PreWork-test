@@ -159,6 +159,15 @@ D) Error
   console.log(inventarioSinTrampa);
   console.log(primerItem);
   console.log(secondItem);
+
+  //OPCION 2
+  // const inventarioSinTrampa = inventario.filter((item) => {
+  // return item !== "trampa";
+  // });
+  // const inventarioEnMayusculas = inventarioSinTrampa.map((item)=>{
+  //  return item.toUpperCase();
+  //});
+  // const [primerItem, segundoItem] = inventarioEnMayusculas;
   
 
   // Pregunta 15:
@@ -171,6 +180,18 @@ D) Error
 
   //write your code here
   for (let index = 0; index < inventario.length; index++) {
-    if ( ) {}
-    
+    if (inventario[index] === 'trampa' ) {
+      inventario[index] += "¡Cuidado! Hay una trampa";   
+  } else if (inventario[index] === 'estrella') {
+    inventario[index] += " ¡Una estrella! Usar en caso de emergencia";
+  } else {
+    inventario[index] += " Mario tiene un(a)" + " " + index;
   }
+}
+
+//Otra opcion
+// for ( const item of inventario) {
+//    if ( item === "trampa"){
+// console.log("")
+// } else if ()
+}
